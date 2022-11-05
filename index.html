@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>minimalist</h2>
+    <div class="desc"><h2> A simple list app that's everywhere you are</h2></div>
+    <div class="container">
+        <div class="listbox">
+            <div class="stat">
+                <p>Today's To Do</p>
+                <img src="assets/sync.svg" alt="...">
+            </div>
+            <form action="" class="form">
+                <input type="text" id="item" required placeholder="Add your item here...">
+                <button type="reset" class="enter" 
+                title="click here or press Enter to submit your item" onclick="add()" ></button>
+            </form>
+            
+            <div id="list">
+                <div id="uncompleted"></div>
+                <div id="completed"></div>
+            </div>
+            <div class="remove">Clear all selected</div>
+        </div>
+        <div class="login">
+            <img src="" alt="tryme" ><br>
+            <a href="#">New List</a><br>
+            <a href="#">Continue wi th google</a>
+        </div>
+    </div>
+    <section>
+        <div>
+            <ul><li>With you everywhere –</li></ul>
+            <p>The internet makes your lists magically available anywhere. You can access them on your phone, tablet, or computer.</p>
+        </div>
+        <div><ul>
+            <li>No need to log-in –</li></ul>
+            <p>You don't need an account to use minimalist. Your lists will live at a special url so just bookmark that and you're good to go!</p>
+        </div>
+        <div>
+            <ul><li>Even better on mobile –</li></ul>
+            <p>This was made mobile-first, so although it's not in the App Store it supports touch gestures like swiping, dragging and tapping.</p>
+        </div>
+        <div>
+            <ul><li>Simple, Shareable –</li></ul>
+            <p>Anyone you share your link with can access your lists the same as you. Because some lists are better shared (and some are not).</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>13993 Lists. 45618 Todos.</p> 
+        <p>© 2018 Made by <a href="#">Lary</a></p>
+    </footer>
+</body>
+</html>

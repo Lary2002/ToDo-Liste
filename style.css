@@ -1,0 +1,150 @@
+body{
+    width: 90%;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.listbox{
+    width: 35%;
+    margin-left: -20px;
+    border: 1px ;
+    box-shadow: 0 2px 8px #00000026;
+}
+
+section{
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(53, 147, 255);
+}
+
+li{
+    font-weight: bolder;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 214, 216);
+    margin-top: 10px;
+}
+
+.stat{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 2px;
+    border: 0,5px ;
+
+}
+
+#uncomplited{
+    display: flex;
+    flex-direction: column;
+}
+.complete{
+    display: none;  
+    background-image: url('assets/check-double.svg');
+    height: 20px;
+}
+
+div.select p{
+    text-decoration: line-through;
+}
+
+.select{
+    /*  */
+    display: flex;
+    align-items: center;
+}
+
+div.deselect p{
+    text-decoration: none;
+}
+
+.deselect{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    opacity: 0.4;
+    width: 20px ;
+    height: 20px;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+}
+
+
+.check{
+    margin-right: 5px;
+    background-image: url('assets/check-circle.svg');
+}
+
+.trash{
+    display: none;
+    margin-right: 50px;
+    background-image: url('assets/trash-alt.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#item{
+    width: 150%;
+    height: 30px;
+    border-top: 1px solid rgba(77, 77, 75, 0.408);
+    border-bottom: 1px solid rgba(77, 77, 75, 0.39);
+    border-right: none;
+    border-left: none; 
+
+}
+
+.enter{
+    background-color: white;
+    background-image: url('assets/arrow-turn-down.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 10px;
+    margin-top: 5px;
+    margin-left: -15px;
+    opacity: 0.4;
+    transform: rotate(0.25turn);
+}
+
+.remove{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgb(218, 222, 226);
+    color:rgb(92, 92, 92) ;
+
+}
+
+input{
+    width:100%;
+    border: none;
+}
+
+.remove:hover{
+    color: black;
+    text-decoration: underline solid;
+}
