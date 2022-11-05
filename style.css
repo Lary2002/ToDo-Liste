@@ -45,6 +45,7 @@ footer{
 
 }
 
+
 #uncomplited{
     display: flex;
     flex-direction: column;
@@ -52,11 +53,21 @@ footer{
 .complete{
     display: none;  
     background-image: url('assets/check-double.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 20px;
 }
 
 div.select p{
     text-decoration: line-through;
+}
+
+.option{
+    background-image: url('assets/ellipsis-v.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    margin-left: 220px;
 }
 
 .select{
@@ -76,6 +87,7 @@ div.deselect p{
 }
 
 img{
+    border: none;
     opacity: 0.4;
     width: 20px ;
     height: 20px;
@@ -84,17 +96,25 @@ img{
 .line{
     display: flex;
     align-items: center;
+    margin: auto;
+}
+
+.unclickedline{
+    background-color: #fff;
+    display: flex;
+    align-content: center;
 }
 
 
 .check{
-    margin-right: 5px;
     background-image: url('assets/check-circle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .trash{
     display: none;
-    margin-right: 50px;
+    margin-left: 50px;
     background-image: url('assets/trash-alt.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -102,12 +122,11 @@ img{
 
 form{
     display: flex;
-    justify-content: space-between;
 }
 
 
 #item{
-    width: 150%;
+    width: 99%;
     height: 30px;
     border-top: 1px solid rgba(77, 77, 75, 0.408);
     border-bottom: 1px solid rgba(77, 77, 75, 0.39);
@@ -116,18 +135,32 @@ form{
 
 }
 
+img:hover, button:hover, .remove:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .enter{
     background-color: white;
     background-image: url('assets/arrow-turn-down.svg');
     background-repeat: no-repeat;
     background-size: contain;
     border: none;
-    width: 10px;
+    width: auto;
     margin-top: 5px;
-    margin-left: -15px;
+    margin-left: -20px;
     opacity: 0.4;
     transform: rotate(0.25turn);
 }
+
+.clickedline{
+    justify-content: space-between;
+    background-color: rgb(246, 251, 174); 
+    display: flex;
+    align-items: center;
+}
+
+
 
 .remove{
     display: flex;
@@ -139,10 +172,7 @@ form{
 
 }
 
-input{
-    width:100%;
-    border: none;
-}
+
 
 .remove:hover{
     color: black;
