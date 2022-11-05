@@ -1,5 +1,5 @@
 body{
-    width: 90%;
+    width: 90%; 
     margin: auto;
 }
 
@@ -91,6 +91,7 @@ img{
     opacity: 0.4;
     width: 20px ;
     height: 20px;
+    position: relative;
 }
 
 .line{

@@ -3,7 +3,6 @@ var list1 = document.getElementById('uncompleted');
 var list2 = document.getElementById('completed');
 const enter = document.querySelector('.enter')
 //const btn = document.querySelector('.enter');
-let todos = [];
 
 
 function show(element) {
@@ -18,7 +17,8 @@ function hide(element) {
     
 
 function add() {
-    const todo = document.createElement('p'); 
+    let todos = [];
+    const p = document.createElement('p'); 
     const completed = document.createElement('img');
     const check = document.createElement('img');
     const line = document.createElement('div');
@@ -27,6 +27,7 @@ function add() {
     var item = document.querySelector('#item');
     todos.push(item.value);
     const option =document.createElement('img');
+    
     localStorage.setItem('todos', JSON.stringify(todos)) ;
     const storedTodo = localStorage.getItem('todos')?.toString();
     
@@ -40,17 +41,22 @@ function add() {
     space.style.width = '100px';
     space.style.marginLeft = '50px'
     trash.className = 'trash'; 
-    todo.innerText = item.value;  
+    for (const todo of todos) {
+        console.log(todo);
+        p.innerHTML = todo
+        line.appendChild(completed)
+        line.appendChild(check);
+        line.appendChild(p);
+        line.appendChild(space);
+        line.appendChild(trash);
+        line.appendChild(option);
+        list1.appendChild(line);
+    }
+    //todo.innerText = item.value;  
     line.className = 'line'
     completed.className = 'complete'
     check.className = 'check';
-    line.appendChild(completed)
-    line.appendChild(check);
-    line.appendChild(todo);
-    line.appendChild(space);
-    line.appendChild(trash);
-    line.appendChild(option);
-    list1.appendChild(line);
+    
     
     var listes = document.querySelectorAll('.line');
     
